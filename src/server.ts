@@ -14,9 +14,8 @@ server.register(cors, {
 });
 
 // Registrando as rotas
-server.register(teamController);
-server.register(driverController);
-server.register(routesDriver, routesTeam);
+server.register(teamController,driverController);
+server.register(routesDriver, routesTeam, );
 
 
 server.listen({port: 3000}, () => {
